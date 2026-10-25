@@ -1,0 +1,10 @@
+{
+  "repo_id": "albaz2000/arabic-itsm-dataset",
+  "repo_type": "dataset",
+  "revision": "940724d5c4bee5bdf430716457a3d3cb99e89f79",
+  "filename": "dataset_clean.jsonl",
+  "bytes": 9161676,
+  "sha256": "4ba4746f0db8ce032c817d42289557dd32f121a3a5f161914aea086118d246b7",
+  "license": "cc-by-nc-4.0",
+  "downloaded_at_utc": "2026-10-18T11:21:17+00:00"
+}

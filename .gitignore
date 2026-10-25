@@ -1,0 +1,14 @@
+# Files git should NOT save. New rules are added when a step creates new kinds of files.
+
+# The dataset itself is not ours and can be re-downloaded (link and revision in README.md).
+# The manifest (revision + sha256) IS saved, so anyone can verify they have the same file.
+data/raw/*
+!data/raw/MANIFEST.json
+
+# Cache files Python creates on its own
+__pycache__/
+.ipynb_checkpoints/
+
+# Local study material, kept on this machine only (not my own code)
+reference/
+docs/

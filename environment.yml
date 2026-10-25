@@ -1,0 +1,22 @@
+# Top-level dependencies only (the "spec"): what we ask for.
+# The exact resolved versions are recorded in requirements.lock.txt (the "lock"): what we got.
+# New packages are added step by step, only when a step needs them.
+name: helpdesk
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Step 1: data audit
+      - pandas
+      - pyarrow
+      - scikit-learn
+      - matplotlib
+      - huggingface_hub
+      # Phase 3: Transformer (CUDA 12.6 build, from PyTorch's own package index)
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch
+      # Tooling
+      - ipykernel
+      - pytest
